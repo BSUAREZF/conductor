@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SERVICIO DE TAXI</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE1.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="dist/css/skins/_all-skins1.css">
+    <style>
+        
+        .fa{
+            font-weight: bold;
+        }
+    </style>
+
+  </head>
+  <body class="hold-transition skin-yellow sidebar-mini">
+    <div class="wrapper">
+
+      <header class="main-header">
+      
+        <nav class="navbar navbar-static-top" role="navigation">
+          <!-- Sidebar toggle button-->
+          <a href="index.html" class="sidebar-toggle" >
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+          <div class="navbar-custom-menu1">
+            <ul class="nav navbar-nav">
+              <!-- Messages: style can be found in dropdown.less-->
+              <li class="dropdown messages-menu" style="font-size: 18px;">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  Crear cuenta
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-custom-menu" >
+            <ul class="nav navbar-nav">
+              <!-- Messages: style can be found in dropdown.less-->
+              <li class="dropdown messages-menu" style="font-size: 14px;">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="label label-success">4</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+   
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <section class="content">
+            <div class="row">
+            <!-- left column -->
+            <div class="col-md-6">
+              <!-- general form elements -->
+              <div class="box box-primary">
+            
+                <form role="form">
+                  <div class="box-body">
+                    <div class="form-group">
+                      <label for="lblNombreCompleto">Nombre completo</label>
+                      <input type="text" class="form-control" name="txtFullname">
+                    </div>
+                    <div class="form-group">
+                      <label for="lblApellidos">Apellido Paterno</label>
+                      <input type="text" class="form-control" name="txtAppaterno">
+                    </div>
+                    <div class="form-group">
+                      <label for="lblApellidos">Apellido Materno</label>
+                      <input type="text" class="form-control" name="txtApmaterno">
+                    </div>
+                    <div class="form-group">
+                      <label for="lblApellidos">DNI</label>
+                      <input type="text" class="form-control" name="txtDni">
+                    </div>
+                    <div class="form-group">
+                        <label>Fecha Nacimiento:</label>
+                        <div class="input-group">
+                          <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                          </div>
+                            <input type="date" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask="">
+                        </div><!-- /.input group -->
+                    </div>
+                    <div class="form-group">
+                      <label for="lblApellidos">Sexo:</label>
+                      <select class="form-control" name="cboSelect">
+                          <option>Masculino</option>
+                          <option>Femenino</option>
+                      </select>
+                      <hr>
+                    </div>
+                    <div class="form-group">
+                      <label for="lblApellidos">Ubigeo:</label>
+                      <select class="form-control" name="cboDepartamento">
+                          <option>Cajamarcar</option>
+                          <option>Cajamarcar</option>
+                          <option>Cajamarcar</option>
+                      </select>
+                      <br>
+                      <select class="form-control" name="cboProvincia">
+                          <option>provincia</option>
+                          <option>provincia</option>
+                          <option>provincia</option>
+                      </select>
+                      <br>
+                      <select class="form-control" name="distrito">
+                          <option>distrito</option>
+                          <option>distrito</option>
+                          <option>distrito</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="lblDireccion">Dirección actual</label>
+                       <div class="input-group">
+                          <div class="input-group-addon">
+                            <i class="fa fa-map-marker"></i>
+                          </div>
+                            <input type="text" class="form-control" name="txtDireccion">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="lblCelular">Celular</label>
+                      <div class="input-group">
+                          <div class="input-group-addon">
+                            <i class="fa fa-phone"></i>
+                          </div>
+                            <input type="text" class="form-control" name="txtCelular">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="lblCorreo">Correo electrónico</label>
+                        <div class="input-group">
+                          <div class="input-group-addon">
+                            <i class="fa fa-mail-forward"></i>
+                          </div>
+                            <input type="text" class="form-control" name="txtCorreo">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="lblContraseña">Contraseña</label>
+                        <div class="input-group">
+                          <div class="input-group-addon">
+                            <i class="fa fa-key"></i>
+                          </div>
+                                <input type="text" class="form-control" name="txtContrasenia">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="lblConfirmacion">Confirmar contraseña</label>
+                      <div class="input-group">
+                          <div class="input-group-addon">
+                            <i class="fa fa-key"></i>
+                          </div>
+                            <input type="text" class="form-control" name="txtConfirmación">
+                        </div>
+                      <hr>
+                    </div>
+                    <div class="form-group">
+                      <label for="lblConfirmacion">Foto de Perfil:</label>
+                      <div class="input-group">
+                          <input type="file" name="fDniamberso">
+                        </div>
+                      <hr>
+                    </div>
+                    <div class="form-group">
+                      <label for="lblConfirmacion">Foto DNI (amberso):</label>
+                      <div class="input-group">
+                          <input type="file" name="fDniamberso">
+                        </div>
+                      <hr>
+                    </div>
+                    <div class="form-group">
+                      <label for="lblConfirmacion">Foto DNI (reverso):</label>
+                      <div class="input-group">
+                          <input type="file" name="fDniamberso">
+                        </div>
+                    </div>
+                  </div><!-- /.box-body -->
+
+                </form>
+              </div><!-- /.box -->
+                <div class="box box-primary">
+                    <div class="content">
+                     <div class="form-group">
+                      <label for="lblContraseña">Tipo de Vehiculo</label>
+                        <div class="input-group">
+                          <div class="input-group-addon">
+                            <i class="fa fa-motorcycle"></i>
+                          </div>
+                            <select class="form-control" name="cboTipovehiculo">
+                                <option>tipo de Vehiculo</option>
+                                <option>tipo de Vehiculo</option>
+                                <option>tipo de Vehiculo</option>
+                            </select>
+                        </div>
+                    </div>
+                     <div class="form-group">
+                      <label for="lblContraseña">Marca de Vehiculo</label>
+                        <div class="input-group">
+                          <div class="input-group-addon">
+                            <i class="fa fa-motorcycle"></i>
+                          </div>
+                            <input type="text" class="form-control" name="txtMarca">
+                        </div>
+                    </div>
+                     <div class="form-group">
+                      <label for="lblContraseña">Placa de Vehiculo</label>
+                        <div class="input-group">
+                          <div class="input-group-addon">
+                            <i class="fa fa-motorcycle"></i>
+                          </div>
+                            <input type="text" class="form-control" name="txtPlaca">
+                        </div>
+                    </div>
+                     <div class="form-group">
+                      <label for="lblContraseña">SOAT de Vehiculo</label>
+                        <div class="input-group">
+                          <div class="input-group-addon">
+                            <i class="fa fa-motorcycle"></i>
+                          </div>
+                            <input type="text" class="form-control" name="txtSOAT">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="lblConfirmacion">Foto tarjeta de propiedad (amberso):</label>
+                      <div class="input-group">
+                          <input type="file" name="fDniamberso">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="lblConfirmacion">Foto tarjeta de propiedad (reverso):</label>
+                      <div class="input-group">
+                          <input type="file" name="fDniamberso">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="lblConfirmacion">Foto SOAT de propiedad (amberso):</label>
+                      <div class="input-group">
+                          <input type="file" name="fDniamberso">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="lblConfirmacion">Foto SOAT de propiedad (reverso):</label>
+                      <div class="input-group">
+                          <input type="file" name="fDniamberso">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="lblConfirmacion">Foto Licencia de Conducir(amberso):</label>
+                      <div class="input-group">
+                          <input type="file" name="fDniamberso">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="lblConfirmacion">Foto Licencia de Conducir(reverso):</label>
+                      <div class="input-group">
+                          <input type="file" name="fDniamberso">
+                        </div>
+                    </div>
+                </div>
+                    
+                  <div class="box-footer">
+                    <button type="submit" class="btn btn-primary btn-block">REGISTRAR DATOS</button>
+                  </div>
+                </div><!--/.col (left) -->
+            </div><!--/.col (left) -->
+          </div>
+        </section>
+      </div><!-- /.content-wrapper -->
+      <footer class="main-footer">
+        <strong>Copyright &copy; 2019 <a href="http://almsaeedstudio.com"></a>.</strong> Espacio para publicidad.
+      </footer>
+
+      <div class="control-sidebar-bg"></div>
+    </div><!-- ./wrapper -->
+
+    <!-- jQuery 2.1.4 -->
+    <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/app.min.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="dist/js/pages/dashboard.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="dist/js/demo.js"></script>
+  </body>
+</html>

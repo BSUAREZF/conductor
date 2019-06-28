@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#e08e0b">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" type="image/png" href="./img/ProgramadorFitness.png">
+    <link rel="apple-touch-icon" href="./ProgramadorFitness.png">
+    <link rel="apple-touch-startup-image" href="./ProgramadorFitness.png">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>APP MOTOS</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE1.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="plugins/iCheck/square/blue.css">
+     <link rel="manifest" href="manifest.json">
+
+  <style>
+        .login-page, .register-page {
+            background: #e08e0b;
+        }
+        .login-box-msg, .register-box-msg {
+           color: #444;
+           font-weight: bold;
+           
+        }
+        .btn-theme{
+            background-color: #444;
+            border-color: #444;
+            font-weight: bold;
+            color: #fff;
+        }
+        .btn:hover, .btn:active{
+            color: #fff;
+        }
+        .enlace >a,#cboRecordar{
+            color: #444;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .enlace >a:hover{
+            color:#444;
+        }
+       
+  </style>
+  </head>
+  <body class="hold-transition login-page" >
+    <div class="login-box">
+      <div class="login-logo">
+        <a href=""><b>Publicidad</b></a>
+      </div><!-- /.login-logo -->
+      <div class="login-box-body">
+          <p class="login-box-msg">Iniciar Sesión</p>
+          <div class="form-group has-feedback">
+            <input type="email" class="form-control" placeholder="Email">
+            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+            <input type="password" class="form-control" placeholder="Password">
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+          </div>
+          <div class="row">
+              <div class="col-xs-12">
+                <div class="checkbox icheck">
+                  <label id="cboRecordar">
+                    <input  type="checkbox"> Recordar mis datos
+                  </label>
+                </div>
+              </div><!-- /.col -->
+            </div>
+          <div class="row">
+           
+            <div class="col-xs-12">
+                <a href="<dashboard>" class="btn btn-theme btn-block btn-flat">INICIAR SESION</a>
+            </div><!-- /.col -->
+          </div>
+        <div class="row text-center">
+          <br>
+          <div class="col-xs-6 enlace">
+              <a href="#">Olvide mi contraseña</a><br>
+          </div>
+          <div class="col-xs-6 enlace">
+              <a href="crear_cuenta.html" class="text-center">Crear Cuenta</a>
+          </div>
+        </div>
+       
+      </div><!-- /.login-box-body -->
+    </div><!-- /.login-box -->
+
+    <!-- jQuery 2.1.4 -->
+    <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <script src="./script.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- iCheck -->
+    <script src="plugins/iCheck/icheck.min.js"></script>
+    <script>
+      $(function () {
+        $('input').iCheck({
+          checkboxClass: 'icheckbox_square-blue',
+          radioClass: 'iradio_square-blue',
+          increaseArea: '20%' // optional
+        });
+      });
+    </script>
+  </body>
+</html>

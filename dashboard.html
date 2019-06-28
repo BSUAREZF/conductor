@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SERVICIO DE TAXI</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE1.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="dist/css/skins/_all-skins1.css">
+    <style>
+        
+        .fa{
+            font-weight: bold;
+        }
+    </style>
+
+  </head>
+  <body class="hold-transition skin-yellow sidebar-mini">
+    <div class="wrapper">
+
+      <header class="main-header">
+      
+        <nav class="navbar navbar-static-top" role="navigation">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+          <div class="navbar-custom-menu1">
+            <ul class="nav navbar-nav">
+              <!-- Messages: style can be found in dropdown.less-->
+              <li class="dropdown messages-menu" style="font-size: 18px;">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  Notificaciones
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-custom-menu" >
+            <ul class="nav navbar-nav">
+              <!-- Messages: style can be found in dropdown.less-->
+              <li class="dropdown messages-menu" style="font-size: 14px;">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="label label-success">4</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- Sidebar user panel -->
+          <div class="user-panel" style="margin-bottom: 30px">
+            <div class="pull-left image">
+              <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+              <p>Victor Tuesta</p>
+              <p class="text-muted">btuesta@gmail.com</p>
+              <p style="color:#f39c12">conductor</p>
+            </div>
+          </div>
+         
+          <!-- /.search form -->
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+          <ul class="sidebar-menu">
+            <li class="header">MAIN NAVIGATION</li>
+            <li class="active treeview">
+              <a href="#">
+                <i class="fa fa-user-secret"></i> <span>Mi Perfil</span> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li class="active"><a href="index.html"><i class="fa fa-angle-double-right"></i>Datos personales</a></li>
+                <li><a href="index2.html"><i class="fa fa-angle-double-right"></i> Datos Unidades</a></li>
+              </ul>
+            </li>
+   
+        
+            <li>
+                <a href="dashboard.html">
+                <i class="fa fa-envelope"></i> <span>Notificaciones</span>
+                <small class="label pull-right bg-yellow">12</small>
+              </a>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-folder"></i> <span>Historial</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="pages/examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
+                <li><a href="pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
+                <li><a href="pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
+                <li><a href="pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
+                <li><a href="pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+                <li><a href="pages/examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+                <li><a href="pages/examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+                <li><a href="pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+              </ul>
+            </li>
+             <li>
+                <a href="index.html">
+                <i class="fa fa-close"></i> <span>Cerrar sesion</span>
+                <small class="label pull-right bg-yellow">12</small>
+              </a>
+            </li>
+        </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+            <section class="content">
+              <div class="row">
+                <div class="col-xs-12">
+                    <div class="info-box">
+                      <span class="info-box-icon bg-aqua">23/05/2019 <br>23:10 pm</span>
+                      <div class="info-box-content">
+
+                        <span class="info-box-number">Origen:</span><span class="info-box-text">D. Origen: Direccion s/n</span>
+                        <span class="info-box-number">Destino:</span><span class="info-box-text">D. destino: Direccion s/n</span>
+                        <span class="info-box-number">Referencia:</span><span class="info-box-text"></span>
+
+                      </div><!-- /.info-box-content -->
+                      <div class="row"> 
+                      <div class="col-xs-12 text-center"> 
+                          <a href="estado_servicio.html" class="btn btn-success "><i class="fa fa-tripadvisor"></i> VER</a>
+                            <a href="" class="btn btn-warning "><i class="fa fa-hourglass"></i> ESTADO</a>
+                          <a href="" class="btn btn-danger "><i class="fa fa-trash"></i> ELIMINAR</a>
+                      </div>
+                    </div><!-- /.info-box -->
+                    <br>    
+                </div><!-- /.info-box -->
+                </div>
+                <div class="col-xs-12">
+                    <div class="info-box">
+                      <span class="info-box-icon bg-aqua">23/05/2019 <br>23:10 pm</span>
+                      <div class="info-box-content">
+
+                        <span class="info-box-number">Origen:</span><span class="info-box-text">D. Origen: Direccion s/n</span>
+                        <span class="info-box-number">Destino:</span><span class="info-box-text">D. destino: Direccion s/n</span>
+                        <span class="info-box-number">Referencia:</span><span class="info-box-text"></span>
+
+                      </div><!-- /.info-box-content -->
+                      <div class="row"> 
+                      <div class="col-xs-12 text-center"> 
+                          <a href="estado_servicio.html" class="btn btn-success "><i class="fa fa-tripadvisor"></i> VER</a>
+                            <a href="" class="btn btn-warning "><i class="fa fa-hourglass"></i> ESTADO</a>
+                          <a href="" class="btn btn-danger "><i class="fa fa-trash"></i> ELIMINAR</a>
+                      </div>
+                    </div><!-- /.info-box -->
+                    <br>    
+                </div><!-- /.info-box -->
+            </section>
+            
+      </div><!-- /.content-wrapper -->
+      <footer class="main-footer">
+     
+        <strong>Copyright &copy; 2019 <a href="http://almsaeedstudio.com"></a>.</strong> Espacio para publicidad.
+      </footer>
+
+      <div class="control-sidebar-bg"></div>
+    </div><!-- ./wrapper -->
+
+    <!-- jQuery 2.1.4 -->
+    <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+
+     
+    
+    <!-- Bootstrap 3.3.5 -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Morris.js charts -->
+    <!-- AdminLTE App -->
+    <script src="dist/js/app.min.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="dist/js/pages/dashboard.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="dist/js/demo.js"></script>
+  </body>
+</html>
